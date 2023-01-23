@@ -1,0 +1,8 @@
+.navbar-vertical.navbar-expand-xs .navbar-nav>.nav-item {
+    margin-top: 0.525rem;
+}
+
+.btn-create-form{
+    font-size: 0.95rem;
+    letter-spacing: normal;
+}
