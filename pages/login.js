@@ -8,6 +8,7 @@ import {SET_AUTH_DATA} from '../store/slices/authSlice';
 import InputError from "../components/Common/InputError";
 import {useRouter} from "next/router";
 import {loginClient} from "../services/AuthServices";
+import {useEffectOnce} from "../utils/hooks/useEffectOnce";
 
 export default function LoginPage() {
     const dispatch = useDispatch();
@@ -19,11 +20,11 @@ export default function LoginPage() {
 
     const [errors, setErrors] = useState({});
 
-    useEffect(() => {
-        if (isLoggedIn()) {
+    useEffectOnce(() => {
+        /*if (isLoggedIn()) {
             router.push('/');
-        }
-    }, []);
+        }*/
+    });
 
     const handleSubmit = (event) => {
         event.preventDefault();

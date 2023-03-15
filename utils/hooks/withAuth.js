@@ -7,11 +7,11 @@ export default function withAuth(Component) {
     }
 
     if (!isLoggedIn()) {
-        logout().then(() => {
+        /*logout().then(() => {
             if (typeof window !== 'undefined') {
                 localStorage.setItem('redirectTo', window.location.href);
             }
-        });
+        });*/
     }
 
     return AuthComponent
