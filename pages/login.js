@@ -21,9 +21,9 @@ export default function LoginPage() {
     const [errors, setErrors] = useState({});
 
     useEffectOnce(() => {
-        /*if (isLoggedIn()) {
+        if (isLoggedIn()) {
             router.push('/');
-        }*/
+        }
     });
 
     const handleSubmit = (event) => {
