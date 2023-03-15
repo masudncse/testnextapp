@@ -52,7 +52,7 @@
     height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
   }
 
-  // Placeholder
+  // PlaceholderSetting
   &::placeholder {
     color: $input-placeholder-color;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.

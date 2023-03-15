@@ -1,0 +1,103 @@
+@import "./Modules/Package.module";
+@import "./Modules/Error404.module";
+@import "./Modules/Form.module";
+@import "./Modules/Submission.module";
+@import "./Modules/Dashboard.module";
+
+.navbar-vertical.navbar-expand-xs .navbar-nav > .nav-item {
+    margin-top: 0.525rem;
+}
+
+.btn-create-form {
+    font-size: 0.95rem;
+    letter-spacing: normal;
+}
+
+.search-form {
+    .input-group {
+        .form-control {
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+        }
+    }
+}
+
+.admin-sidebar {
+    position: relative;
+    /*height: 100vh;
+    overflow-y: scroll;*/
+
+    .sidenav-header {
+        height: auto;
+    }
+
+    &.navbar-vertical {
+        .navbar-collapse {
+            height: calc(100vh - 380px);
+        }
+
+        .navbar-nav {
+            .nav-link {
+                .icon {
+                    padding: 6px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &.active {
+                    .icon {
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-brand {
+            padding: 1rem 2rem 1.5rem;
+        }
+
+        .navbar-brand-img {
+            max-width: inherit;
+            max-height: inherit;
+            width: 100%;
+        }
+    }
+}
+
+.custom-dropdown-toggle {
+    .dropdown-divider {
+        background-color: #dddddd;
+        margin: 4px 0;
+    }
+}
+
+.custom-pagination {
+    .page-item {
+        &.active {
+            .page-link {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/* Nice Scroll */
+.nice-scroll {
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        border-radius: 6px;
+        transition: background-color .2s linear, width .2s ease-in-out;
+        -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+        width: 6px;
+        height: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #C9CACA;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,42 @@
+.submission {
+    .actions {
+        .icon {
+            i {
+                /*font-size: 1rem;*/
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.75);
+                }
+            }
+
+            svg {
+                /*font-size: 1rem;*/
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.75);
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        &.columns {
+
+            .columns-inner {
+                padding: 5px 15px 10px;
+                min-width: 350px;
+
+                ul.column-list {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+}

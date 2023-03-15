@@ -1,21 +1,20 @@
-import React, {useEffect} from "react";
+import '../styles/globals.scss'
+import 'react-toastify/dist/ReactToastify.css';
+
+import React from "react";
 import {ToastContainer} from 'react-toastify';
 import {Provider} from 'react-redux'
-import { PersistGate } from "redux-persist/integration/react"
-import {store, persistor} from "../store"
+import {PersistGate} from "redux-persist/integration/react"
 
-import '../styles/globals.css'
-import 'react-toastify/dist/ReactToastify.css';
+import {persistor, store} from "../store";
 
 export default function App({Component, pageProps}) {
     return (
-        <>
-            <Provider store={store}>
-                <PersistGate loading={null} persistor={persistor}>
-                    <Component {...pageProps} />
-                    <ToastContainer/>
-                </PersistGate>
-            </Provider>
-        </>
+        <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}>
+                <Component {...pageProps} />
+                <ToastContainer/>
+            </PersistGate>
+        </Provider>
     )
 }

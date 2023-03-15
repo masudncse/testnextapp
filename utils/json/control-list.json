@@ -1,0 +1,302 @@
+[
+  {
+    "type": "control_heading",
+    "name": "Heading",
+    "icon": "https://cdn-icons-png.flaticon.com/512/2799/2799932.png",
+    "group": "",
+    "properties": {
+      "headingText": "Heading",
+      "headingDefaultText": "Type a Heading",
+      "headingFontSize": "28px",
+      "subHeadingText": "Subheading",
+      "subHeadingDefaultText": "Type a Subheading",
+      "subHeadingFontSize": "22px",
+      "textAlignment": "left",
+      "type": "control_heading"
+    }
+  },
+  {
+    "type": "control_fullname",
+    "name": "Full Name",
+    "icon": "https://icon-library.com/images/name-tag-icon/name-tag-icon-19.jpg",
+    "group": "",
+    "properties": {
+      "label": "Full Name",
+      "subLabels": {
+        "prefix": "Prefix",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name"
+      },
+      "placeholders": {
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name"
+      },
+      "showPrefix": "No",
+      "prefixMode": "Dropdown",
+      "prefixOptions": [
+        "Mr.",
+        "Mrs."
+      ],
+      "showMiddleName": "No",
+      "required": "No",
+      "readOnly": "No",
+      "type": "control_fullname"
+    }
+  },
+  {
+    "type": "control_email",
+    "name": "Email",
+    "icon": "https://www.iconpacks.net/icons/2/free-send-mail-icon-2574-thumb.png",
+    "group": "",
+    "properties": {
+      "label": "Email",
+      "subLabel": "Enter your valid email address",
+      "defaultValue": "",
+      "required": "No",
+      "readOnly": "No",
+      "isValidEmail": "Yes",
+      "placeholder": "Enter email",
+      "minLength": "",
+      "maxLength": "",
+      "fixedWidth": "",
+      "type": "control_email"
+    }
+  },
+  {
+    "type": "control_address",
+    "name": "Address",
+    "icon": "https://img.icons8.com/ios/200w/order-delivered.png",
+    "group": "",
+    "properties": {
+      "label": "Address",
+      "subLabels": {
+        "streetAddress": "Street Address",
+        "streetAddressLine2": "Street Address Line 2",
+        "city": "City",
+        "state": "State / Province",
+        "postal": "Postal / Zip Code",
+        "country": "Country"
+      },
+      "placeholders": {
+        "streetAddress": "Street Address",
+        "streetAddressLine2": "Street Address Line 2",
+        "city": "City",
+        "state": "State / Province",
+        "postal": "Postal / Zip Code",
+        "country": "Country"
+      },
+      "showStreetAddress": "Yes",
+      "showStreetAddressLine2": "Yes",
+      "showCity": "Yes",
+      "showState": "Yes",
+      "showPostal": "Yes",
+      "showCountry": "Yes",
+      "required": "No",
+      "readOnly": "No",
+      "type": "control_address"
+    }
+  },
+  {
+    "type": "control_phone",
+    "name": "Phone",
+    "icon": "https://png.pngtree.com/png-clipart/20210104/ourmid/pngtree-phone-icon-calling-png-image_5820379.png",
+    "group": "",
+    "properties": {
+      "label": "Phone Number",
+      "subLabel": "Enter your phone number",
+      "defaultValue": "",
+      "required": "No",
+      "readOnly": "No",
+      "placeholder": "Enter phone number",
+      "fixedWidth": "",
+      "type": "control_phone"
+    }
+  },
+  {
+    "type": "control_datetime",
+    "name": "Date & Time",
+    "icon": "https://cdn-icons-png.flaticon.com/512/55/55238.png",
+    "group": "",
+    "properties": {
+      "label": "Date & Time",
+      "subLabels": {
+        "date": "Date",
+        "time": "Time"
+      },
+      "showPickerType": "Both",
+      "required": "No",
+      "readOnly": "No",
+      "fixedWidth": "",
+      "type": "control_datetime"
+    }
+  },
+  {
+    "type": "control_short_text",
+    "name": "Short Text",
+    "icon": "https://icons.veryicon.com/png/128/education-technology/alibaba-big-data-oneui/t-text-box.png",
+    "group": "",
+    "properties": {
+      "label": "Short Text",
+      "subLabel": "Write something in short",
+      "defaultValue": "",
+      "required": "No",
+      "readOnly": "No",
+      "placeholder": "Enter your short text",
+      "minLength": "",
+      "maxLength": "",
+      "fixedWidth": "",
+      "type": "control_short_text"
+    }
+  },
+  {
+    "type": "control_long_text",
+    "name": "Long Text",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1150/1150884.png",
+    "group": "",
+    "properties": {
+      "label": "Long Text",
+      "subLabel": "Long Text Subtitle",
+      "defaultValue": "Write something in long",
+      "placeholder": "Long Text",
+      "required": "No",
+      "readOnly": "No",
+      "minLength": "",
+      "maxLength": "",
+      "editorMode": "PlainText",
+      "fixedWidth": "",
+      "type": "control_long_text"
+    }
+  },
+  {
+    "type": "control_paragraph",
+    "name": "Paragraph",
+    "icon": "https://icons-for-free.com/download-icon-paragraph-1324438847162223245_512.png",
+    "group": "basic",
+    "properties": {
+      "contents": "",
+      "defaultContents": "<p>Click setting to edit...</p>",
+      "editorMode": "RichText",
+      "type": "control_paragraph"
+    }
+  },
+  {
+    "type": "control_dropdown",
+    "name": "Dropdown",
+    "icon": "https://icon-library.com/images/dropdown-menu-icon/dropdown-menu-icon-16.jpg",
+    "group": "basic",
+    "properties": {
+      "label": "Dropdown Label",
+      "subLabel": "Please choose an option.",
+      "options": [
+        "Option 01",
+        "Option 02",
+        "Option 03"
+      ],
+      "defaultSelected": "Option 03",
+      "emptyOptionText": "Select Option",
+      "required": "No",
+      "fixedWidth": "",
+      "type": "control_dropdown"
+    }
+  },
+  {
+    "type": "control_single_choice",
+    "name": "Single Choice - Radio",
+    "icon": "https://cdn-icons-png.flaticon.com/512/7613/7613915.png",
+    "group": "basic",
+    "properties": {
+      "label": "Single Choice Label",
+      "options": [
+        "Option 01",
+        "Option 02",
+        "Option 03"
+      ],
+      "defaultChecked": "Option 01",
+      "required": "No",
+      "type": "control_single_choice"
+    }
+  },
+  {
+    "type": "control_multiple_choice",
+    "name": "Multiple Choice - Checkbox",
+    "icon": "https://cdn-icons-png.flaticon.com/512/2440/2440972.png",
+    "group": "basic",
+    "properties": {
+      "label": "Multiple Choice Label",
+      "options": [
+        "Option 01",
+        "Option 02",
+        "Option 03"
+      ],
+      "defaultChecked": [
+        "Option 01",
+        "Option 02"
+      ],
+      "required": "No",
+      "type": "control_multiple_choice"
+    }
+  },
+  {
+    "type": "control_number",
+    "name": "Number",
+    "icon": "https://static.thenounproject.com/png/765940-200.png",
+    "group": "basic",
+    "properties": {
+      "label": "Number",
+      "subLabel": "Enter a number",
+      "defaultValue": "",
+      "placeholder": "e.g., 786",
+      "required": "No",
+      "readOnly": "No",
+      "minLength": "",
+      "maxLength": "",
+      "fixedWidth": "",
+      "type": "control_number"
+    }
+  },
+  {
+    "type": "control_image",
+    "name": "Image",
+    "icon": "https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png",
+    "group": "basic",
+    "properties": {
+      "label": "Image",
+      "subLabel": "Image Sub Label",
+      "imagePath": "",
+      "imageAltText": "Alt Text",
+      "linkImage": "http://google.com",
+      "imageWidth": "",
+      "imageHeight": "",
+      "imageAlignment": "center",
+      "required": "No",
+      "type": "control_image"
+    }
+  },
+  {
+    "type": "control_time",
+    "name": "Time",
+    "icon": "https://img.icons8.com/ios/256/alarm-clock.png",
+    "group": "basic",
+    "properties": {
+      "label": "Time",
+      "subLabel": "Pick a time",
+      "required": "No",
+      "readOnly": "No",
+      "fixedWidth": "",
+      "type": "control_time"
+    }
+  },
+  {
+    "type": "control_button",
+    "name": "Submit",
+    "icon": "https://cdn4.iconfinder.com/data/icons/thin-touch-gestures-1/24/thin-1611_touch_press_button_click-512.png",
+    "group": "basic",
+    "properties": {
+      "text": "Submit",
+      "type": "control_button",
+      "buttonAlign": "center"
+    }
+  }
+]

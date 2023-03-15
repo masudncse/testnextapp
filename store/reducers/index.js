@@ -1,9 +1,9 @@
 import {combineReducers} from "redux";
-import profileReducer from "../slices/profileSlice";
 import authReducer from "../slices/authSlice";
+import themeReducer from "../slices/themeSlice";
 
 export default combineReducers({
     auth: authReducer,
-    profile: profileReducer,
+    theme: themeReducer,
     // any other reducers here
 })

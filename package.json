@@ -10,21 +10,36 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "@react-pdf/renderer": "^3.1.6",
     "@reduxjs/toolkit": "^1.9.1",
+    "@tinymce/tinymce-react": "^4.3.0",
     "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
     "cookie": "^0.5.0",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.6.3",
     "js-cookie": "^3.0.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "next": "13.1.1",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
+    "react-csv": "^2.2.2",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-pdf-table": "^1.0.0-alfa.3",
     "react-redux": "^8.0.5",
+    "react-style-editor": "^0.4.0",
+    "react-tag-input-component": "^2.0.2",
     "react-toastify": "^9.1.1",
+    "react-use": "^17.4.0",
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
+    "sweetalert2": "^11.7.1",
+    "swr": "^2.0.3"
+  },
+  "devDependencies": {
     "sass": "^1.57.1"
   }
 }
