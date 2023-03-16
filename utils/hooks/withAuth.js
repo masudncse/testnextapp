@@ -1,18 +1,22 @@
 import React from 'react'
 import {isLoggedIn, logout} from '../auth'
 
-export default function withAuth(Component) {
+/*export default function withAuth(Component) {
     const AuthComponent = (props) => {
         return <Component {...props} />
     }
 
     if (!isLoggedIn()) {
-        /*logout().then(() => {
-            if (typeof window !== 'undefined') {
-                localStorage.setItem('redirectTo', window.location.href);
-            }
-        });*/
+        logout(true);
     }
 
     return AuthComponent
+}*/
+
+export default function withAuth(Component) {
+    if (!isLoggedIn()) {
+        logout(true).then(r => r);
+    }
+
+    return (props) => <Component {...props} />
 }

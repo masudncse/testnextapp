@@ -58,10 +58,10 @@ export default function AdminSidebar({user}) {
                 id="sidenav-collapse-main"
             >
                 <ul className="navbar-nav">
-                    <li>
+                    <li className="nav-item mt-0 px-3">
                         <button
                             type="button"
-                            className="btn bg-gradient-primary btn-create-form mt-3 mb-4 w-100"
+                            className="btn bg-gradient-primary btn-create-form my-3 w-100"
                             onClick={handleCreateNewForm}
                         >
                             Create Form

@@ -34,9 +34,14 @@ export const login = (token = '') => {
  *
  * @return {Promise<void>}
  */
-export const logout = async () => {
+export const logout = async (isRedirectTo = false) => {
     if (typeof window !== 'undefined') {
+
         await logoutClient();
+
+        if (isRedirectTo) {
+            localStorage.setItem('redirectTo', window.location.href);
+        }
 
         Cookies.remove('access_token', {expires: 86400, sameSite: 'lax'});
         location.href = '/login';

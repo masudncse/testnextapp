@@ -4,7 +4,6 @@ import AdminLayout from "../../components/Layout/AdminLayout";
 import axios from "../../utils/axios";
 import {tostify} from "../../utils/helpers";
 import {toast} from "react-toastify";
-import style from '../../styles/Modules/Package.module.scss'
 import {useEffectOnce} from "../../utils/hooks/useEffectOnce";
 import {SET_BREADCRUMB} from "../../store/slices/themeSlice";
 import {useDispatch} from "react-redux";
@@ -49,14 +48,14 @@ const PackagePage = () => {
             <Head>
                 <title>Package - Online Form Builder</title>
             </Head>
-            <div className={style.package}>
+            <div className="package">
                 <div className="row">
                     <div className="col-md-12 mb-4">
                         <div className="card">
                             <div className="card-body p-3">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className={style.package__hero}>
+                                        <div className="package__hero">
                                             <h2>Package</h2>
                                             <h3>Chose the right plan for you.</h3>
                                         </div>
@@ -66,11 +65,11 @@ const PackagePage = () => {
                         </div>
                     </div>
                     <div className="col-md-12 mb-4">
-                        <div className={style.package__pricing}>
+                        <div className="package__pricing">
                             <div className="row">
                                 {packages.map((item, key) => <div
                                     className="col-md-3" key={key}>
-                                    <div className={style.package__pricing__item}>
+                                    <div className="package__pricing__item">
                                         <div className="card">
                                             <div className="card-body p-3">
                                                 <ul>

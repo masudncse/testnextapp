@@ -28,7 +28,7 @@ export default function AdminNavbar() {
 
         localStorage.setItem('redirectTo', '');
 
-        await logout();
+        await logout(false);
     }
 
     const handleCreateNewForm = () => {
