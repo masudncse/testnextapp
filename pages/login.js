@@ -20,11 +20,11 @@ export default function LoginPage() {
 
     const [errors, setErrors] = useState({});
 
-    /*useEffectOnce(() => {
+    useEffectOnce(() => {
         if (isLoggedIn()) {
             router.push('/');
         }
-    });*/
+    });
 
     const handleSubmit = (event) => {
         event.preventDefault();

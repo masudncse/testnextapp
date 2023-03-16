@@ -12,14 +12,14 @@ const axiosClient = axios.create({
 
 // axiosClient.defaults.headers.common['x-access-token'] = token();
 
-axiosClient.interceptors.response.use((response) => response, error => {
+axiosClient.interceptors.response.use((response) => response, async (error) => {
     if (error.response.status === 401) {
-        logout();
+        await logout(false);
 
-        return Promise.reject()
+        return Promise.reject();
     }
 
-    return Promise.reject(error)
+    return Promise.reject(error);
 })
 
 export default axiosClient;
