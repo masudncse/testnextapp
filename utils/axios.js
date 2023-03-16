@@ -14,7 +14,7 @@ const axiosClient = axios.create({
 
 axiosClient.interceptors.response.use((response) => response, async (error) => {
     if (error.response.status === 401) {
-        await logout(false);
+        // await logout(false);
 
         return Promise.reject();
     }
