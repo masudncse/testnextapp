@@ -14,9 +14,9 @@ import {isLoggedIn, logout} from '../auth'
 }*/
 
 export default function withAuth(Component) {
-    if (!isLoggedIn()) {
-        logout(true).then(r => r);
-    }
+    // if (!isLoggedIn()) {
+    //     logout(true).then(r => r);
+    // }
 
     return (props) => <Component {...props} />
 }
